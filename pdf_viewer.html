@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PDF 预览</title>
+  <style>
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+    header {
+      position: sticky; top: 0; background: #fff; z-index: 10;
+      display:flex; gap:12px; align-items:center;
+      padding: 12px 14px; border-bottom: 1px solid #eee;
+    }
+    .btn {
+      display:inline-block; padding:10px 12px; border:1px solid #ddd;
+      border-radius: 10px; text-decoration:none; color:#111;
+    }
+    .viewer { width: 100vw; height: calc(100vh - 58px); border: 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>PDF 预览</strong>
+    <a class="btn" href="%E3%80%8A%E7%8B%97%E7%8B%97%E8%AE%AD%E7%BB%83%EF%BC%9A%E7%9F%A5%E9%81%93%E8%BF%99%E4%BA%9B%E5%B0%B1%E5%A4%9F%E4%BA%86%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.pdf" download>下载 PDF</a>
+  </header>
+
+  <!-- 浏览器原生 PDF 预览 -->
+  <iframe class="viewer" src="%E3%80%8A%E7%8B%97%E7%8B%97%E8%AE%AD%E7%BB%83%EF%BC%9A%E7%9F%A5%E9%81%93%E8%BF%99%E4%BA%9B%E5%B0%B1%E5%A4%9F%E4%BA%86%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.pdf"></iframe>
+</body>
+</html>
